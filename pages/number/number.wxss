@@ -1,0 +1,95 @@
+.sub-tab_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.sub-tab {
+  position: relative;
+  padding: 0 8rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #1C202D;
+}
+.sub-tab--active {
+  color: #07C49C
+}
+.sub-tab--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8rpx;
+  background-color: #07C49C;
+}
+.content-list {
+  height: calc(100vh - 100rpx);
+}
+.content-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx;
+  height: 168rpx;
+  background-color: #fff;
+}
+.content-item image {
+  flex: 0 0 128rpx;
+  height: 128rpx;
+}
+.content-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 40rpx;
+}
+.content-info image {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+.teacher-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #1C202D;
+}
+.class-name {
+  font-size: 28rpx;
+  color: #1C202D;
+}
+.teacher-tel {
+  
+  font-size: 28rpx;
+  color: #989CA5;
+}
+.btns {
+  display: flex;
+  font-size: 24rpx;
+}
+.btn-comfrim,
+.btn-edit,
+.btn-reject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128rpx;
+  height: 48rpx;
+  border: 1rpx solid;
+  border-radius: 40rpx;
+}
+.btn-comfrim {
+  margin-right: 10rpx;
+  color: #07C49C;
+}
+.btn-comfrim view {
+  margin-right: 8px;
+  width: 4px;
+  height: 8px;
+  border: 1rpx solid #07C49C;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
+}

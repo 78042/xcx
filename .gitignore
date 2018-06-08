@@ -1,0 +1,17 @@
+node_modules
+dev*
+.history
+yarn-error.log
+dist1.rar
+dist
+leader*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+

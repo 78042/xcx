@@ -1,0 +1,15 @@
+<view class="tab-list">
+  <view data-route='number' bindtap='linkTo' class="tab-item">
+    <image class="tab-img" src="/images/default_avatar.png"></image>
+    <text>人员</text>
+    <view class="tab-active" wx:if="{{route==='number'}}"></view>
+  </view>
+  <view class="tab-xunban">
+    <image class="tab-img" src="/images/live.png"></image>
+  </view>
+  <view data-route='dynamic' bindtap='linkTo' class="tab-item">
+    <image class="tab-img" src="/images/default_avatar.png"></image>
+    <text>动态</text>
+    <view class="tab-active" wx:if="{{route==='dynamic'}}"></view>
+  </view>
+</view>

@@ -1,0 +1,74 @@
+<view class="sub-title-wrapper border-b-t">
+  <view class="sub-border"></view>
+  <view class="sub-title">动态列表</view>
+  <view class="line line-gray"></view>
+  <view class="add-btn">新增</view>
+</view>
+<scroll-view scroll-y lower-threshold="50" bindscrolltolower="lower" class="content-list">
+  <view longpress='onpress' class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="content-item border-bottom">
+    <text class="title">春节的放假通知春节的放假通知春节的放假通知</text>
+    <text class="time">2019.01.26</text>
+    <view class="del-btn"><image src="/images/live.png"></image></view>
+  </view>
+  <view class="lower-loading">加载中...</view>
+</scroll-view>

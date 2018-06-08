@@ -1,0 +1,65 @@
+.info {
+  background-color: #fff;
+}
+.info > view {
+  display: flex;
+  align-items: center;
+  padding: 28rpx 40rpx;
+}
+.info text {
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+.info .class-name {
+  justify-content: space-between;
+}
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+}
+.sub-title {
+  margin-right: 84rpx;
+  font-weight: bold;
+  color: #1C202D;
+}
+.name {
+  flex: 1;
+}
+.arrow {
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(-45deg);
+  transform-origin: center center;
+}
+.del-btn,
+.comfrim-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+}
+.class-list {
+  height: calc(100vh - 50px);
+}
+.class-list view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 40rpx;
+  background-color: #fff;
+}
+.class_name {
+  font-size: 32rpx;
+  color: #1C202D;
+}
+.class_teacher {
+  font-size: 24rpx;
+  color: #989CA5;
+}
+.active text {
+  color: #07C49C;
+}

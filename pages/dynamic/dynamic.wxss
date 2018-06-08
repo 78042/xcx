@@ -1,0 +1,49 @@
+.add-btn {
+  position: absolute;
+  right: 30rpx;
+  font-size: 28rpx;
+}
+.content-list {
+  height: calc(100vh - 80rpx);
+}
+.content-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 40rpx;
+  height: 56px;
+  background-color: #fff;
+}
+.title {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  font-size: 32rpx;
+  color: #1C202D;
+}
+.time {
+  margin: 0 20rpx;
+  font-size: 24rpx;
+  color: #989CA5;
+}
+.del-btn {
+  position: absolute;
+  right: -56px;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  text-align: center;
+  background-color: #ED5851;
+}
+.del-btn image {
+  width: 21px;
+  height: 21px;
+}
+.lower-loading {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/dynamic/dynamic",
+    "pages/number/number",
+    "pages/edit/edit",
+    "pages/xunban/xunban",
+    "pages/login/login"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#07C49C",
+    "list": [
+      {
+        "pagePath": "pages/number/number",
+        "iconPath": "/images/default_avatar.png",
+        "selectedIconPath": "/images/live.png",
+        "text": "人员"
+      },
+      {
+        "pagePath": "pages/xunban/xunban",
+        "iconPath": "/images/default_avatar.png",
+        "selectedIconPath": "/images/live.png",
+        "text": "巡班"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "iconPath": "/images/default_avatar.png",
+        "selectedIconPath": "/images/live.png",
+        "text": "动态"
+      }
+    ]
+  }
+}

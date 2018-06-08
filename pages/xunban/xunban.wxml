@@ -1,0 +1,32 @@
+<live-player id="player" src="{{liveSrc}}" mode="live" autoplay bindstatechange="statechange" binderror="error" >
+  <!-- <cover-view class="poster-wrapper">
+    <cover-image class="poster" src="/images/poster.jpeg"></cover-image>
+    <cover-image class="play-btn" src="/images/icon-play.png"></cover-image>
+  </cover-view>  -->
+  <cover-view hidden="{{!isLoading}}" class="spinner">
+    <cover-view class="bounce bounce1"></cover-view>
+    <cover-view class="bounce bounce2"></cover-view>
+    <cover-view class="bounce bounce3"></cover-view>
+    <cover-view class="bounce bounce4"></cover-view>
+    <cover-view class="bounce bounce5"></cover-view>
+    <cover-view class="bounce bounce6"></cover-view>
+  </cover-view>
+  <cover-view hidden='{{!listShow}}' class="class-list-wrapper">
+    <cover-view class="sub-title-wrapper">
+      <cover-view class="sub-border"></cover-view>
+      <cover-view class="sub-title">班级列表</cover-view>
+      <cover-view class="line line-gray"></cover-view>
+    </cover-view>
+    <cover-view class="class-list">
+      <cover-view bindtap='selectClass' data-id='{{item.id}}' wx:for="{{classListData}}" wx:key="{{item.id}}" wx:for-item="item" class="class-item">
+        <cover-view class="class-name {{item.id == curClassId ? 'active':''}}">{{item.className}}</cover-view>
+        <cover-view class="class-teacher {{item.id == curClassId ? 'active':''}}">{{item.teacherName||''}}</cover-view>
+        <cover-view class="line"></cover-view>
+      </cover-view>
+    </cover-view>
+  </cover-view>
+  <cover-view bindtap='onlistShow' class="list-btn">
+    <cover-image class="icon-img" src="/images/icon-play.png"></cover-image>
+  </cover-view>
+</live-player>
+

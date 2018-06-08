@@ -1,0 +1,48 @@
+.logo {
+  margin: 152rpx auto 160rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+.logo_img {
+  width: 100%;
+  height: 100%;
+}
+.login-form {
+  margin: auto;
+  width: 590rpx;
+}
+.login-form_title {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #1C202D;
+}
+.login-form input {
+  padding: 24rpx 0;
+  font-size: 32rpx;
+  line-height: 32rpx;
+}
+.login-form .login-form_tel,
+.login-form .login-form_code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form .login-form_code input {
+  flex: 414;
+}
+
+.login-form .login-form_code .get_code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 160;
+  height: 64rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background-color: #07C49C;
+  border-radius: 6rpx;
+}
+.login-btn {
+  margin: 40rpx auto 0;
+  width: 590rpx;
+}

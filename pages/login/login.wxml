@@ -1,0 +1,18 @@
+<view class="logo">
+  <image class="logo_img" src="../../images/logo.png" />
+</view>
+<view class="login-form">
+  <text class="login-form_title">手机号码</text>
+  <view class="login-form_tel border-bottom">
+    <input data-which='tel' value="{{tel}}" type="number" bindinput='bindKeyInput' cursor-spacing="12" placeholder="请输入手机号码" maxlength='11' placeholder-class="placeholder" />
+    <icon bindtap="clearTel" type="clear" size="16"/>
+  </view>
+  <text class="login-form_title">验证号码</text>
+  <view class="login-form_code border-bottom">
+    <input data-which='code' type="number" bindinput='bindKeyInput' placeholder="请输入验证码" maxlength='4' cursor-spacing="12" placeholder-class="placeholder" />
+    <text bindtap="getCode" class="get_code">{{codeText}}</text>
+  </view>
+</view>
+<view class="login-btn">
+  <button bindtap="login" disabled="{{loginBtnDisabled}}" type="primary" style="background-color: {{loginBtnDisabled?'#eee':'#07C49C'}}">登录</button>
+</view>

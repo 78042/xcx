@@ -1,0 +1,38 @@
+<view class="sub-tab_list border-b-t">
+  <view bindtap='switchTab' data-tab='new' class="sub-tab {{tabActive==='new'?'sub-tab--active':''}}">新增人员</view>
+  <view bindtap='switchTab' data-tab='existent' class="sub-tab {{tabActive==='existent'?'sub-tab--active':''}}">已有人员</view>
+</view>
+<scroll-view scroll-y class="content-list" hidden="{{tabActive !== 'new'}}">
+  <view class="content-item border-bottom">
+    <image src='/images/poster.jpeg'></image>
+    <view class="content-info">
+      <text class="teacher-name">周玉先</text>
+      <text class="class-name">{{item.className||'暂未分配'}}</text>
+      <view>
+        <image src="/images/default_avatar.png"></image>
+        <text class="teacher-tel">1380000000</text>
+      </view>
+    </view>
+    <view class="btns">
+      <view data-action="add" bindtap='execute' class="btn-comfrim"><view></view> 确认</view>
+      <view data-action="reject" bindtap='execute' class="btn-reject">× 拒绝</view>
+    </view>
+  </view>
+</scroll-view>
+<scroll-view scroll-y class="content-list" hidden="{{tabActive !== 'existent'}}">
+  <view wx:for="{{existentList}}" wx:for-item="item" wx:key="{{item.id}}" class="content-item border-bottom">
+    <image src="{{item.photo||'/images/default_avatar.png'}}"></image>
+    <view class="content-info">
+      <text class="teacher-name">{{item.userName}}</text>
+      <text class="class-name">{{item.className||'暂未分配'}}</text>
+      <view>
+        <image src="/images/default_avatar.png"></image>
+        <text class="teacher-tel">{{item.phone}}</text>
+      </view>
+    </view>
+    <view class="btns">
+      <view data-action="edit" data-id="{{item.id}}" bindtap='execute' class="btn-edit"><view></view> 编辑</view>
+    </view>
+  </view>
+</scroll-view>
+<!-- <tab route="number" /> -->

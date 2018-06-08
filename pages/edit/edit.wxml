@@ -1,0 +1,31 @@
+<view hidden='{{!isShow}}'>
+  <view class="info">
+    <view class="border-bottom">
+      <text class="sub-title">头像</text>
+      <image class="avatar" src="{{editedTeacher.photo || '/images/default_avatar.png'}}"></image>
+    </view>
+    <view class="border-bottom">
+      <text class="sub-title">姓名</text>
+      <text>{{editedTeacher.userName}}</text>
+    </view>
+    <view class="border-bottom">
+      <text class="sub-title">手机</text> 
+      <text>{{editedTeacher.phone}}</text>
+    </view>
+    <view bindtap='goSelectClass' class="class-name">
+      <text class="sub-title">班级</text>
+      <text class="name">{{editedTeacher.className||''}}</text>
+      <view class="arrow"></view>
+    </view>
+  </view>
+  <button data-action="del" data-id="{{editedTeacher.id}}" bindtap='execute' type="warn" class="del-btn">删除</button>
+</view>
+<view hidden='{{isShow}}'>
+  <scroll-view class="class-list" scroll-y>
+    <view wx:for="{{classListData}}" wx:for-item="item" wx:key="{{item.id}}" bindtap='onselect' data-class-id="{{item.id}}" data-class-name="{{item.className}}" data-old-teacher-id="{{item.userId}}" data-old-teacher="{{item.teacherName}}" class="border-top {{item.id==classId?'active':''}}">
+      <text class="class_name">{{item.className}}</text>
+      <text class="class_teacher">{{item.teacherName||''}}</text>
+    </view>
+  </scroll-view>
+  <button data-action="comfrim" data-id="{{editedTeacher.id}}" bindtap='execute' type="primary" style="background:#07C49C" class="comfrim-btn">确认</button>
+</view>
